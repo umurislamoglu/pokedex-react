@@ -5,7 +5,7 @@ import PokemonDetails from '../components/pokemonDetails/PokemonDetails';
 import MyPokemons from './../components/Backpack/MyPokemons';
 import Favorites from '../components/Favorites/Favorites';
 import Home from '../components/Home';
-
+import NotFound from './../components/NotFound';
 
 const AppRouter = () => {
     return (
@@ -15,6 +15,7 @@ const AppRouter = () => {
             <Route  exact path="/pokemons/:name" component={PokemonDetails}/>
             <Route path = "/myPokemons" component= {MyPokemons}/>
             <Route path = "/favorites" component= {Favorites}/>
+            <Route path = "*" component= {NotFound}/>
             <Route/>
         </Switch>
             
